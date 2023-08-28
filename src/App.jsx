@@ -8,11 +8,11 @@ import Home from './routes/Home';
 import Detail from "./routes/Detail";
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter /**basename="/til/"**/>
       <Routes>
-        <Route path="/hello`" element={<h1>Hello!!</h1>}/>
-        <Route path="/movie/:id`" element={<Detail />}/>
-        <Route path="/" element={< Home />}/>
+        <Route path="/hello" element={<h1>Hello!!</h1>}/>
+        <Route path="/movie/:id" element={<Detail />}/>
+        <Route path="/*" element={< Home />}/>
       </Routes>
     </BrowserRouter>
   );
